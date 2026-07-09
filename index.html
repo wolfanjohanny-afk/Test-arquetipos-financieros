@@ -4,18 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Test de Arquetipos Financieros</title>
-<style>
-body{font-family:Arial,sans-serif;background:#f4f6f8;margin:0;display:flex;justify-content:center;align-items:center;height:100vh}
-.card{background:#fff;padding:40px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.15);text-align:center;max-width:600px}
-button{padding:12px 24px;border:none;border-radius:8px;background:#1b4d89;color:#fff;font-size:18px}
-</style>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="card">
+
+<div id="app">
+
 <h1>Test de Arquetipos Financieros</h1>
-<p>Base del proyecto creada correctamente.</p>
-<p>En el siguiente paso se agregarán las preguntas y el cálculo de resultados.</p>
-<button onclick="alert('Funciona correctamente')">Comenzar</button>
+
+<p>Versión 1.0</p>
+
+<div id="pregunta"></div>
+
+<div id="opciones"></div>
+
+<button id="siguiente">
+Siguiente
+</button>
+
 </div>
+
+<script src="preguntas.js"></script>
+<script src="resultados.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
