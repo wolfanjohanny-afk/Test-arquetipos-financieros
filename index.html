@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ADN Financiero</title>
+
+<title>Brújula Financiera</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -11,22 +14,49 @@
 
 <body>
 
-<div class="hero">
+<div class="contenedor">
 
-<div class="card">
+<div class="izquierda">
 
-<h1>ADN Financiero®</h1>
+<h1>Brújula Financiera®</h1>
 
-<p>Descubre el arquetipo que guía tus decisiones con el dinero.</p>
+<h2>
+Descubre el arquetipo financiero que guía tus decisiones.
+</h2>
+
+<p>
+
+Responde la evaluación y conoce cómo piensas,
+ahorras, gastas e inviertes.
+
+</p>
+
+</div>
+
+<div class="derecha">
+
+<div class="tarjeta">
+
+<h3>Iniciar evaluación</h3>
 
 <label>Nombre</label>
-<input id="nombre" type="text" placeholder="Escribe tu nombre">
+
+<input
+type="text"
+id="nombre"
+placeholder="Escribe tu nombre">
 
 <label>Edad</label>
-<input id="edad" type="number" placeholder="Edad">
+
+<input
+type="number"
+id="edad"
+placeholder="Edad">
 
 <button id="btnComenzar">
+
 Comenzar evaluación
+
 </button>
 
 <div id="app"></div>
@@ -35,9 +65,14 @@ Comenzar evaluación
 
 </div>
 
+</div>
+
 <script src="preguntas.js"></script>
+
 <script src="resultados.js"></script>
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
