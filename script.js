@@ -1,38 +1,38 @@
-let indicePregunta = 0;
+let indice = 0;
 let respuestas = [];
-
-function iniciarTest() {
-    document.getElementById("contenido").innerHTML = "";
-}
 
 function mostrarPregunta() {
 
-    if (indicePregunta >= preguntas.length) {
-        document.getElementById("contenido").innerHTML =
-        "<h2>Test finalizado</h2><p>Gracias por responder.</p>";
+    const contenedor = document.getElementById("app");
+
+    if (indice >= preguntas.length) {
+        contenedor.innerHTML = "<h2>¡Evaluación finalizada!</h2><p>La siguiente versión mostrará el resultado automático.</p>";
         return;
     }
 
-    const pregunta = preguntas[indicePregunta];
+    const p = preguntas[indice];
 
-    let html = `<h2>Pregunta ${indicePregunta + 1} de ${preguntas.length}</h2>`;
-    html += `<p><strong>${pregunta.texto}</strong></p>`;
+    let html = `
+        <h2>Pregunta ${indice + 1} de ${preguntas.length}</h2>
+        <p>${p.texto}</p>
+    `;
 
-    pregunta.opciones.forEach((opcion, i) => {
+    p.opciones.forEach((opcion, i) => {
         html += `
-        <button onclick="responder(${i})"
-        style="display:block;margin:10px 0;padding:10px;width:320px;">
-        ${opcion}
+        <button onclick="responder(${i})">
+            ${opcion}
         </button>`;
     });
 
-    document.getElementById("contenido").innerHTML = html;
+    contenedor.innerHTML = html;
 }
 
 function responder(opcion) {
     respuestas.push(opcion);
-    indicePregunta++;
+    indice++;
     mostrarPregunta();
 }
 
-window.onload = iniciarTest;
+document.getElementById("btnComenzar").onclick = function () {
+    mostrarPregunta();
+};
