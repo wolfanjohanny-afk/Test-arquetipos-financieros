@@ -1,36 +1,32 @@
 const preguntas = [
-
 {
-texto: "Cuando recibes dinero extra, normalmente...",
+texto:"Cuando recibes un dinero inesperado, ¿qué haces primero?",
 opciones:[
-"Lo ahorro inmediatamente",
-"Invierto una parte",
-"Lo gasto en algo que deseo",
-"Lo comparto con otros",
-"Improviso sin pensarlo"
+"Lo ahorro",
+"Pago deudas",
+"Lo invierto",
+"Me doy un gusto",
+"Lo reparto según mis prioridades"
 ]
 },
-
 {
-texto:"Antes de comprar algo costoso...",
+texto:"Antes de hacer una compra importante...",
 opciones:[
-"Lo pienso varios días",
-"Comparo opciones",
-"Compro por emoción",
-"Pido opinión",
-"Lo compro inmediatamente"
+"Investigo mucho",
+"Comparo precios",
+"Decido por intuición",
+"Compro inmediatamente",
+"Pido consejo"
 ]
 },
-
 {
-texto:"Tu principal meta financiera es...",
+texto:"¿Qué representa el dinero para ti?",
 opciones:[
-"Tener seguridad",
-"Hacer crecer mi patrimonio",
-"Disfrutar la vida",
-"Ayudar a otros",
-"Tener libertad"
+"Seguridad",
+"Libertad",
+"Éxito",
+"Tranquilidad",
+"Oportunidades"
 ]
-},
-
+}
 ];
